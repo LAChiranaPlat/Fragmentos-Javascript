@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publicaciones</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css" />
+	<script src="https://kit.fontawesome.com/0c0154afee.js" crossorigin="anonymous"></script>
+<!--
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+-->
+</head>
+<body>
+
+	<div class="spot" id="spot" id="spot">		<!-- fondo transparente-->
+
+
+		<div class="spot__box" id="spotBox">	<!-- UI -->
+
+			<a href="" class="spot__close" id="iconClose">X</a>
+			<p class="spot__titulo">Crear Publicacion</p>
+			<hr /> 
+
+			<div class="spot__container" id="spotContainer">
+				
+				<textarea class="spot__inbox" id="inbox"></textarea>
+				
+				<div class="spot__galery">
+					<a href="#" class="spot__close" id="closeSpotGalery">X</a>
+					<div>
+					<h2>Agrega Fotos</h2>
+					<a href="#"><i class="fa-regular fa-images"></i></a>
+					<p>o Arrastra y Suelta</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="spot__multimedia">
+				<a href="#" id="iconAddImage"><i class="fa-regular fa-images"></i></a>
+			</div>
+
+			<a href="#" class="spot__publicar" id="btnPublicar">Publicar</a>
+		</div>
+	</div>
+
+	<div class="post">
+		<div class="post__publicaciones">
+			<img src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.30808-6/327051788_597217785515322_4367027133647942562_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF-cWNfQ75t0b7rb4mHHrVOw_TGbrOUilzD9MZus5SKXMa5f0QExXRtSI9jGXyxljIShCWFoLJHzpBuwihOhleI&_nc_ohc=EAm-_-YG8hUAX-OKpli&_nc_ht=scontent.flim11-1.fna&oh=00_AfB1zrKhXyVeSruHIp3t321hvZKWJJszLDELJ5VfBIITEg&oe=649AE587" class="post__avatar">
+			
+			<div class="post__text js-publicar"></div>
+		</div>
+		<hr />
+		<div class="post__acciones">
+			<a href="#" id="btnAddImages"> <i class="fa-regular fa-images"></i> </a>
+			<a href="#">B</a>
+			<a href="#">C</a>
+		</div>
+	</div>
+
+	
+
+	<div class="posteos">
+		
+		<template>
+			<div class="posteos__item">
+				<div class="posteos__autor">LAChirana Plat</div>
+				<hr />
+				<div class="posteos__contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				<div class="posteos__imagen">#</div>
+				<div class="posteos__interaccion"> - - - </div>
+			</div>
+		</template>
+
+	</div>
+
+	<script type="text/javascript" src="script/libreria.js"></script>
+	<script type="text/javascript">
+
+		setTimeout(()=>{
+			document.body.insertAdjacentHTML("afterbegin",
+				'<div class="post">'+
+		'<div class="post__publicaciones">'+
+			'<img src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.30808-6/327051788_597217785515322_4367027133647942562_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF-cWNfQ75t0b7rb4mHHrVOw_TGbrOUilzD9MZus5SKXMa5f0QExXRtSI9jGXyxljIShCWFoLJHzpBuwihOhleI&_nc_ohc=EAm-_-YG8hUAX-OKpli&_nc_ht=scontent.flim11-1.fna&oh=00_AfB1zrKhXyVeSruHIp3t321hvZKWJJszLDELJ5VfBIITEg&oe=649AE587" class="post__avatar">'+
+			
+			'<div class="post__text js-publicar"></div>'+
+'		</div>'+
+'		<hr />'+
+'		<div class="post__acciones">'+
+'			<a href="#" id="btnAddImages"> <i class="fa-regular fa-images"></i> </a>'+
+'			<a href="#">B</a>'+
+'			<a href="#">C</a>'+
+'		</div>'+
+'	</div>'+
+
+'	<div class="post">'+
+'		<div class="post__publicaciones">'+
+'			<img src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.30808-6/327051788_597217785515322_4367027133647942562_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF-cWNfQ75t0b7rb4mHHrVOw_TGbrOUilzD9MZus5SKXMa5f0QExXRtSI9jGXyxljIShCWFoLJHzpBuwihOhleI&_nc_ohc=EAm-_-YG8hUAX-OKpli&_nc_ht=scontent.flim11-1.fna&oh=00_AfB1zrKhXyVeSruHIp3t321hvZKWJJszLDELJ5VfBIITEg&oe=649AE587" class="post__avatar">'+
+			
+'			<div class="post__text js-publicar"></div>'+
+'		</div>'+
+'		<hr />'+
+'		<div class="post__acciones">'+
+'			<a href="#" id="btnAddImages"> <i class="fa-regular fa-images"></i> </a>'+
+'			<a href="#">B</a>'+
+'			<a href="#">C</a>'+
+'		</div>'+
+'	</div>'+
+'	<div class="post">'+
+'		<div class="post__publicaciones">'+
+'			<img src="https://scontent.flim11-1.fna.fbcdn.net/v/t39.30808-6/327051788_597217785515322_4367027133647942562_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF-cWNfQ75t0b7rb4mHHrVOw_TGbrOUilzD9MZus5SKXMa5f0QExXRtSI9jGXyxljIShCWFoLJHzpBuwihOhleI&_nc_ohc=EAm-_-YG8hUAX-OKpli&_nc_ht=scontent.flim11-1.fna&oh=00_AfB1zrKhXyVeSruHIp3t321hvZKWJJszLDELJ5VfBIITEg&oe=649AE587" class="post__avatar">'+
+			
+'		<div class="post__text js-publicar"></div>'+
+'		</div>'+
+'		<hr />'+
+'		<div class="post__acciones">'+
+'			<a href="#" id="btnAddImages"> <i class="fa-regular fa-images"></i> </a>'+
+'			<a href="#">B</a>'+
+'			<a href="#">C</a>'+
+'		</div>'+
+'	</div>')
+		},2000)		
+
+		const spot=obj("spot")
+		const btnPublicar=obj("btnPublicar")
+		const inbox=obj("inbox")
+
+		const fragmento=document.createDocumentFragment()
+		const plantilla=obj("template")
+
+
+		const newPost=obj(".js-publicar",true)
+
+/*
+		newPost.forEach(
+			(item)=>{
+
+				listen(
+				{
+					element:item,
+					event:"click",
+					action:()=>{
+
+						spot.classList.add("spot--show")
+						inbox.focus()
+
+					}
+				}
+				)
+			}
+		)
+*/
+		
+
+		listen(
+		{
+			element:"btnAddImages",
+			event:"click",
+			action:()=>{
+
+				spot.classList.add("spot--show")
+				obj("spotContainer").style.overflow="auto"
+				obj("spotContainer").scroll(0,150)
+				inbox.focus()
+
+			}
+		}
+		)
+
+		listen({
+			element:"iconClose",
+			event:"click",
+			action:(e)=>{
+
+				e.preventDefault()
+/*
+				if(obj("inbox").value!="")
+				{
+					let rpta=confirm("Esta seguro de cancelar")
+					if(rpta)
+						spot.classList.remove("spot--show")
+				}
+*/
+				txtPublicar.textContent=inbox.value
+				obj("spotContainer").style.overflow="hidden"
+				obj("spotContainer").scroll(0,150)
+
+				spot.classList.remove("spot--show")
+
+
+			}
+		})
+
+		const caja=listen(
+		{
+			element:"inbox",
+			event:"keyup",
+			action:(e)=>{
+
+				if(caja.value!="")
+					btnPublicar.classList.add("spot__publicar--Active")
+				else 
+					btnPublicar.classList.remove("spot__publicar--Active")
+
+
+				/*
+				e.preventDefault()
+				spot.classList.remove("spot--show")
+				*/
+			}
+		}
+		)
+
+		listen({
+			element:"iconAddImage",
+			event:"click",
+			action:(e)=>{
+				
+				e.preventDefault()
+				
+				obj("spotContainer").style.overflow="auto"
+				obj("spotContainer").scroll(0,150)
+
+			}
+		})
+
+		listen({
+			element:"closeSpotGalery",
+			event:"click",
+			action:(e)=> {
+				
+				obj("spotContainer").style.overflow="hidden"
+				obj("spotContainer").scroll(0,0)
+
+			}
+			
+		})
+
+		listen(
+		{
+			element:"spot",
+			event:"click",
+			action:function(){
+				this.classList.remove("spot--show")
+				txtPublicar.textContent=inbox.value
+			}
+
+		})
+
+		listen({
+			element:"spotBox",
+			event:"click",
+			action:(e)=>e.stopPropagation()
+		})
+
+		listen({
+			element:"btnPublicar",
+			event:"click",
+			action:(e)=>{
+				
+				console.log("click")
+				const clon=plantilla.content.cloneNode(true)
+				clon.querySelector(".posteos__autor").textContent="Titulo desde interfaz"
+				clon.querySelector(".posteos__contenido").textContent=inbox.value
+
+				fragmento.appendChild(clon)
+				obj(".posteos").appendChild(fragmento)
+
+				inbox.value=""
+				txtPublicar.textContent=""
+
+				obj("spotContainer").style.overflow="hidden"
+				obj("spotContainer").scroll(0,0)
+
+				spot.classList.remove("spot--show")
+
+
+			}
+		})
+		
+
+		listen({
+			element:"body",
+			event:"click",
+			action:(e)=>{
+
+				if(e.target.classList.contains("js-publicar"))
+				{
+					
+					spot.classList.add("spot--show")
+					inbox.focus()
+					
+				}
+
+			}
+		})
+
+/*
+	document.body.addEventListener("click",(e)=>{
+				if(e.target.classList.contains("js-publicar"))
+				{
+					spot.classList.add("spot--show")
+						inbox.focus()
+				}
+	})
+
+	*/
+	</script>
+</body>
+</html>
